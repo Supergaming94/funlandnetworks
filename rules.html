@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rules • FunLand Network</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+
+  <header class="site-header" role="banner">
+    <div class="left">
+      <img src="funlandnetwork.jpg" alt="FunLand Network logo" class="logo" />
+      <div class="brand">
+        <h1>Funland Network</h1>
+        <p class="tag">Community • Fair Play • Safety</p>
+      </div>
+    </div>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="forums.html">Forums</a>
+      <a href="store.html">Store</a>
+      <a href="vote.html">Vote</a>
+      <a href="rules.html" class="active">Rules</a>
+      <a href="staff.html">Staff</a>
+      <a href="support.html">Support</a>
+    </nav>
+
+    <div class="right-actions">
+      <button id="ip-copy" class="ip-btn">play.funlandnetwork.net</button>
+      <a class="discord-btn" href="https://discord.gg/v5aHss2GRv" target="_blank">Join Discord</a>
+    </div>
+  </header>
+
+  <main class="rules-main" role="main">
+    <div class="rules-container">
+      <!-- Breadcrumb (small) -->
+      <div class="breadcrumb">
+        <a href="forums.html">Forums</a> <span class="sep">›</span> <span>Rules</span>
+      </div>
+
+      <div class="rules-header">
+        <h2>Rules</h2>
+        <div class="rules-actions">
+          <button id="btn-report" class="btn danger">Report a player</button>
+          <button id="btn-appeal" class="btn success">Appeal a punishment</button>
+        </div>
+      </div>
+
+      <!-- Intro / boxed text -->
+      <div class="rules-intro">
+        <h3>Introduction</h3>
+        <p>We aim to provide players with a safe, fair and friendly playing environment. By joining FunLand Network you agree to follow all rules listed here. Please read this page in full and use the report / appeal buttons if needed.</p>
+      </div>
+
+      <!-- Tabs for categories -->
+      <div class="rules-tabs">
+        <div class="tab-list" role="tablist" aria-label="Rules categories">
+          <button class="tab active" data-tab="global">Global</button>
+          <button class="tab" data-tab="forums">Forums</button>
+          <button class="tab" data-tab="bedwars">BedWars</button>
+          <button class="tab" data-tab="opfactions">OP Factions</button>
+          <button class="tab" data-tab="survival">Survival &amp; SkyBlock</button>
+          <button class="tab" data-tab="practice">Practice</button>
+          <button class="tab" data-tab="screen">Screen Sharing</button>
+        </div>
+      </div>
+
+      <!-- Notice box -->
+      <div class="notice-box">
+        <strong>Note:</strong> All global rules & punishments also apply to Discord. Mutable offences may result in bans if committed outside chat.
+      </div>
+
+      <!-- Search -->
+      <div class="rules-search">
+        <input id="rulesSearch" type="search" placeholder="Search for rules..." />
+      </div>
+
+      <!-- Disallowed behaviour heading -->
+      <section class="disallowed">
+        <h3>Disallowed Behaviour</h3>
+        <p class="muted">Click on a rule to view a detailed explanation (sample items below).</p>
+
+        <div class="table-wrap">
+          <table id="rulesTable" class="rules-table">
+            <thead>
+              <tr>
+                <th>Rule (Disallowed)</th>
+                <th>First Offence</th>
+                <th>Second Offence</th>
+                <th>Third Offence</th>
+                <th>Fourth Offence</th>
+                <th>Fifth Offence</th>
+                <th>Sixth Offence</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="rule-name">Account/real money/third-party trading</td>
+                <td>IP-Ban (30 Days)</td>
+                <td>IP-Ban (90 Days)</td>
+                <td>IP-Ban (Permanent)</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+              </tr>
+
+              <tr>
+                <td class="rule-name">Advertising</td>
+                <td>IP-Ban (90 Days)</td>
+                <td>IP-Ban (Permanent)</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+              </tr>
+
+              <tr>
+                <td class="rule-name">Ban evasion</td>
+                <td>IP-Ban (Permanent)</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+              </tr>
+
+              <tr>
+                <td class="rule-name">Blackmailing</td>
+                <td>IP-Ban (90 Days)</td>
+                <td>IP-Ban (Permanent)</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+              </tr>
+
+              <tr>
+                <td class="rule-name">Boosting</td>
+                <td>IP-Ban (30 Days)</td>
+                <td>IP-Ban (90 Days)</td>
+                <td>IP-Ban (Permanent)</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+              </tr>
+
+              <tr>
+                <td class="rule-name">Causing drama purposely</td>
+                <td>IP-Ban (1 Day)</td>
+                <td>IP-Ban (3 Days)</td>
+                <td>IP-Ban (7 Days)</td>
+                <td>IP-Ban (30 Days)</td>
+                <td>IP-Ban (90 Days)</td>
+                <td>IP-Ban (Permanent)</td>
+              </tr>
+
+              <tr>
+                <td class="rule-name">Chargebacking</td>
+                <td>IP-Ban (Permanent)</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+              </tr>
+
+              <tr>
+                <td class="rule-name">Cheating</td>
+                <td>IP-Ban (90 Days)</td>
+                <td>IP-Ban (Permanent)</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+              </tr>
+
+              <tr>
+                <td class="rule-name">Cyber/DDoS/death threats/wishes</td>
+                <td>IP-Ban (30 Days)</td>
+                <td>IP-Ban (90 Days)</td>
+                <td>IP-Ban (Permanent)</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+              </tr>
+
+              <tr>
+                <td class="rule-name">Discrimination</td>
+                <td>IP-Ban (3 Days)</td>
+                <td>IP-Ban (7 Days)</td>
+                <td>IP-Ban (30 Days)</td>
+                <td>IP-Ban (90 Days)</td>
+                <td>IP-Ban (Permanent)</td>
+                 <td>–</td>
+              </tr>
+
+               <tr>
+                <td class="rule-name">Doxxing (Threats)</td>
+                <td>IP-Ban (90 Days)</td>
+                <td>IP-Ban (Permanent)</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+              </tr>
+
+               <tr>
+                <td class="rule-name">Duping</td>
+                <td>IP-Ban (Permanent)</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+              </tr>
+
+               <tr>
+                <td class="rule-name">Encouraging breaking the rules</td>
+                <td>IP-Mute (3 Days)</td>
+                <td>IP-Mute (7 Days)</td>
+                <td>IP-Mute (30 Days)</td>
+                <td>IP-Mute (90 Days)</td>
+                <td>IP-Mute (Permanent)</td>
+                <td>–</td>
+              </tr>
+
+              
+               <tr>
+                <td class="rule-name">Exploiting/illegal items</td>
+                <td>IP-Ban (30 Days)</td>
+                <td>IP-Ban (90 Days)</td>
+                <td>IP-Ban (Permanent)</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+              </tr>
+
+              <tr>
+                <td class="rule-name">Falsifying evidence</td>
+                <td>IP-Ban (Permanent)</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+              </tr>
+
+              <tr>
+                <td class="rule-name">Forbidden files/links</td>
+                <td>IP-Ban (90 Days)</td>
+                <td>IP-Ban (Permanent)</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+              </tr>
+
+              <tr>
+                <td class="rule-name">Foreign Language</td>
+                <td>Warning</td>
+                <td>IP-Mute (1 Day)</td>
+                <td>IP-Mute (3 Days)</td>
+                <td>IP-Mute (7 Days)</td>
+                <td>IP-Mute (30 Days)</td>
+                <td>IP-Mute (90 Days)</td>
+              </tr>
+
+               <tr>
+                <td class="rule-name">Illegal trapping/killing methods</td>
+                <td>IP-Ban (7 Days)</td>
+                <td>IP-Ban (30 Days)</td>
+                <td>IP-Ban (90 Days)</td>
+                <td>IP-Ban (Permanent)</td>
+                <td>–</td>
+                <td>–</td>
+              </tr>
+
+                <tr>
+                <td class="rule-name">Inappropriate capes/skins</td>
+                <td>IP-Ban (7 Days)</td>
+                <td>IP-Ban (30 Days)</td>
+                <td>IP-Ban (90 Days)</td>
+                <td>IP-Ban (Permanent)</td>
+                <td>–</td>
+                <td>–</td>
+              </tr>
+
+                <tr>
+                <td class="rule-name">Inappropriate usernames</td>
+                <td>IP-Ban (Permanent)</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+              </tr>
+
+              <tr>
+                <td class="rule-name">Lag machines</td>
+                <td>IP-Ban (30 Days)</td>
+                <td>IP-Ban (90 Days)</td>
+                <td>IP-Ban (Permanent)</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+              </tr>
+
+              <tr>
+                <td class="rule-name">Media advertising</td>
+                <td>IP-Ban (7 Days)</td>
+                <td>IP-Ban (30 Days)</td>
+                <td>IP-Ban (90 Days)</td>
+                <td>IP-Ban (Permanent)</td>
+                <td>–</td>
+                <td>–</td>
+              </tr>
+
+               <tr>
+                <td class="rule-name">Mute evasion</td>
+                <td>IP-Mute (Permanent)</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+              </tr>
+
+              <tr>
+                <td class="rule-name">Negative behaviour</td>
+                <td>Warning</td>
+                <td>IP-Mute (1 Day)</td>
+                <td>IP-Mute (3 Days)</td>
+                <td>IP-Mute (7 Days)</td>
+                <td>IP-Mute (30 Days)</td>
+                <td>IP-Mute (90 Days)</td>
+              </tr>
+
+              <tr>
+                <td class="rule-name">Negative use of disabilities/diseases</td>
+                <td>IP-Ban (7 Days)</td>
+                <td>IP-Ban (30 Days)</td>
+                <td>IP-Ban (90 Days)</td>
+                <td>IP-Ban (Permanent)</td>
+                <td>–</td>
+                <td>–</td>
+              </tr>
+
+              <tr>
+                <td class="rule-name">Scamming</td>
+                <td>IP-Ban (30 Days)</td>
+                <td>IP-Ban (90 Days)</td>
+                <td>IP-Ban (Permanent)</td>
+                <td>–</td>
+                <td>–</td>
+                <td>–</td>
+              </tr>
+
+              <tr>
+                <td class="rule-name">Seizure triggering content</td>
+                <td>IP-Mute (7 Days)</td>
+                <td>IP-Mute (30 Days)</td>
+                <td>IP-Mute (90 Days)</td>
+                <td>IP-Mute (Permanent)</td>
+                <td>–</td>
+                <td>–</td>
+              </tr>
+
+              <tr>
+                <td class="rule-name">Sexual content</td>
+                <td>IP-Ban (1 Day)</td>
+                <td>IP-Ban (3 Days)</td>
+                <td>IP-Ban (7 Days)</td>
+                <td>IP-Ban (30 Days)</td>
+                <td>IP-Ban (90 Days)</td>
+                <td>IP-Ban (Permanent)</td>
+              </tr>
+
+              <tr>
+                <td class="rule-name">Spamming commands</td>
+                <td>Warning</td>
+                <td>IP-Ban (1 Day)</td>
+                <td>IP-Ban (3 Days)</td>
+                <td>IP-Ban (7 Days)</td>
+                <td>IP-Ban (30 Days)</td>
+                <td>IP-Ban (90 Days)</td>
+              </tr>
+
+              <tr>
+                <td class="rule-name">Spamming/flooding</td>
+                <td>Warning</td>
+                <td>IP-Mute (1 Day)</td>
+                <td>IP-Mute (3 Days)</td>
+                <td>IP-Mute (7 Days)</td>
+                <td>IP-Mute (30 Days)</td>
+                <td>IP-Mute (90 Days)</td>
+              </tr>
+
+              <tr>
+                <td class="rule-name">Staff impersonating</td>
+                <td>IP-Ban (3 Days)</td>
+                <td>IP-Ban (7 Days)</td>
+                <td>IP-Ban (30 Days)</td>
+                <td>IP-Ban (90 Days)</td>
+                <td>IP-Ban (Permanent)</td>
+                <td>–</td>
+              </tr>
+
+              <tr>
+                <td class="rule-name">Swearing</td>
+                <td>Warning</td>
+                <td>IP-Mute (1 Day)</td>
+                <td>IP-Mute (3 Days)</td>
+                <td>IP-Mute (7 Days)</td>
+                <td>IP-Mute (30 Days)</td>
+                <td>IP-Mute (90 Days)</td>
+              </tr>
+
+              <tr>
+                <td class="rule-name">Teaming with cheaters</td>
+                <td>IP-Mute (7 Days)</td>
+                <td>IP-Mute (30 Days)</td>
+                <td>IP-Mute (90 Days)</td>
+                <td>IP-Mute (Permanent)</td>
+                <td>–</td>
+                <td>–</td>
+              </tr>
+
+
+              <!-- Add more rows as needed -->
+            </tbody>
+          </table>
+        </div> <!-- /table-wrap -->
+      </section>
+
+      <!-- Explanation modal (hidden) -->
+      <div id="ruleModal" class="rule-modal" aria-hidden="true">
+        <div class="rule-modal-inner">
+          <button id="modalClose" class="modal-close">✕</button>
+          <h4 id="modalTitle"></h4>
+          <p id="modalBody"></p>
+        </div>
+      </div>
+
+    </div> <!-- /rules-container -->
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="left">
+        <img src="funlandnetwork.jpg" alt="" class="flogo" />
+        <div>
+          <p>&copy; <span id="year"></span> FunLand Network</p>
+          <small>All rights reserved • FunLand Network</small>
+        </div>
+      </div>
+
+      <div class="right">
+        <nav class="footer-nav">
+          <a href="rules.html">Rules</a>
+          <a href="support.html">Support</a>
+          <a href="store.html">Store</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

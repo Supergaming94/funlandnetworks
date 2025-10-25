@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FunLand Network</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="left">
+      <img src="funlandnetwork.jpg" alt="FunLand Network logo" class="logo" />
+      <div class="brand">
+        <h1>FunLand Network</h1>
+        <p class="tag">The Next Generation Minecraft Experience</p>
+      </div>
+    </div>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="forums.html">Forums</a>
+      <a href="vote.html">Vote</a>
+      <a href="staff.html">Staff</a>
+      <a href="members.html">Members</a>
+      <a href="rules.html">Rules</a>
+      <a href="support.html">Support</a>
+      <a href="punishments.html">Punishments</a>
+      <a href="store.html" class="nav-cta">Store</a>
+    </nav>
+
+    <div class="right-actions">
+      <button id="ip-copy" class="ip-btn" title="Copy server IP">play.funlandnetwork.net</button>
+      <a class="discord-btn" href="https://discord.gg/v5aHss2GRv" target="_blank" rel="noopener noreferrer">
+        Join Discord
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-left">
+        <img src="funlandnetwork.jpg" alt="FunLand hero art" class="hero-art" onerror="this.src='funlandnetwork.jpg'"/>
+      </div>
+
+      <div class="hero-right">
+        <h2 class="neon-title">FunLand Network</h2>
+        <p class="lead">Play • Build • Conquer — Where Adventure Never Ends.</p>
+
+        <div class="hero-actions">
+          <button id="play-now" class="cta">Play Now</button>
+          <a class="secondary" href="https://discord.gg/v5aHss2GRv" target="_blank" rel="noopener noreferrer">Join Our Discord</a>
+          <a class="secondary" href="store.html">Visit Store</a>
+          <a class="secondary" href="forums.html">Forums</a>
+        </div>
+
+        <div class="taglines">
+          <span>The Next Generation Minecraft Experience</span>
+          <span>Play • Build • Conquer</span>
+          <span>Where Adventure Never Ends</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Gamemodes -->
+    <section class="cards" id="modes">
+      <h3>Game Modes</h3>
+      <div class="card-grid">
+        <div class="card">Survival</div>
+        <div class="card">Lifesteal</div>
+        <div class="card">OneBlock</div>
+        <div class="card">SkyBlock</div>
+        <div class="card">BedWars</div>
+        <div class="card">Practice</div>
+        <div class="card">KitPvP</div>
+        <div class="card">SkyWars</div>
+        <div class="card">OPSurvival</div>
+        <div class="card">OpPrison</div>
+      </div>
+    </section>
+
+    <!-- Updates -->
+    <section class="updates">
+      <h3>Latest Updates</h3>
+      <ul id="announcement-list" class="announce-list">
+        <!-- filled by JS -->
+      </ul>
+    </section>
+
+    <!-- Join CTA -->
+    <section class="join-cta">
+      <div class="cta-inner">
+        <h4>Ready to join?</h4>
+        <p>Copy the IP or join our Discord to be the first to play when the server launches.</p>
+        <div class="join-actions">
+          <button id="copy-ip-cta" class="cta small">Copy IP</button>
+          <a class="cta ghost" href="https://discord.gg/v5aHss2GRv" target="_blank" rel="noopener noreferrer">Open Discord</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="left">
+        <img src="funlandnetwork.jpg" alt="" class="flogo" />
+        <div>
+          <p>&copy; <span id="year"></span> FunLand Network</p>
+          <small>All rights reserved • FunLand Network</small>
+        </div>
+      </div>
+
+      <div class="right">
+        <nav class="footer-nav">
+          <a href="rules.html">Rules</a>
+          <a href="support.html">Support</a>
+          <a href="store.html">Store</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div id="toast" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

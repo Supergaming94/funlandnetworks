@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Forums • FunLand Network</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="left">
+      <img src="funlandnetwork.jpg" alt="FunLand Network logo" class="logo" />
+      <div class="brand">
+        <h1>FunLand Network</h1>
+        <p class="tag">The Next Generation Minecraft Experience</p>
+      </div>
+    </div>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="forums.html" class="active">Forums</a>
+      <a href="vote.html">Vote</a>
+      <a href="staff.html">Staff</a>
+      <a href="members.html">Members</a>
+      <a href="rules.html">Rules</a>
+      <a href="support.html">Support</a>
+      <a href="punishments.html">Punishments</a>
+      <a href="store.html" class="nav-cta">Store</a>
+    </nav>
+
+    <div class="right-actions">
+      <button id="ip-copy" class="ip-btn">play.funlandnetwork.net</button>
+      <a class="discord-btn" href="https://discord.gg/v5aHss2GRv" target="_blank">Join Discord</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page" style="text-align:center; margin-top:60px;">
+      <h2 class="neon-title">Community Forums</h2>
+      <p class="lead">Talk, share, and connect with other FunLand players. Post suggestions, report bugs, or find teammates!</p>
+
+      <div class="card-grid" style="margin-top:30px;">
+        <div class="card">Announcements</div>
+        <div class="card">Server Updates</div>
+        <div class="card">Suggestions</div>
+        <div class="card">Bug Reports</div>
+        <div class="card">Off-Topic Chat</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="left">
+        <img src="funlandnetwork.jpg" alt="" class="flogo" />
+        <div>
+          <p>&copy; <span id="year"></span> FunLand Network</p>
+          <small>All rights reserved • FunLand Network</small>
+        </div>
+      </div>
+      <div class="right">
+        <nav class="footer-nav">
+          <a href="rules.html">Rules</a>
+          <a href="support.html">Support</a>
+          <a href="store.html">Store</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
